@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Rapido</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="relative flex flex-col justify-center items-center">
+   
+    <nav class="w-full flex justify-between items-center px-8 py-4 text-white z-10">
+        <h1 class="text-2xl font-bold">Rapido</h1>
+        <ul class="hidden md:flex space-x-6 text-lg">
+            <li><a href="#" class="hover:bg-blue-900 p-2 rounded-lg">About Us</a></li>
+            <li><a href="#" class="hover:bg-blue-900 p-2 rounded-lg">Services</a></li>
+            <li><a href="#" class="hover:bg-blue-900 p-2 rounded-lg">Contact</a></li>
+        </ul>
+        
+        <button class="px-4 py-2 bg-white text-purple-600 rounded-full shadow hover:bg-gray-200 hidden md:block" id="login">Login</button>
+        <img id="menu" src="images/menu.png" class="h-10 w-10 sm:block md:hidden cursor-pointer"/>
+    </nav>
+    <img src="images/bg.png" class="absolute z-0 -top-5 object-fit h-full w-full"/>
+
+   
+    <section class="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-8 py-20 text-white z-10">
+       
+        <div class="md:w-1/2 space-y-6">
+            <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+                Special Way To Realize Your Own Business.
+            </h2>
+            <p class="text-lg leading-relaxed">
+                Are you going to make your website? Share your idea with us or make it yourself with our project maker software. Make it happen today!
+            </p>
+            <div class="flex space-x-4">
+                <button id="started" class="px-6 py-3 bg-blue-500 text-white font-semibold rounded-full shadow hover:bg-blue-400">
+                    Get it Started
+                </button>
+                <button id="wath" class="px-6 py-3 bg-white text-blue-600 font-semibold rounded-full shadow hover:bg-gray-200">
+                    Watch Demo
+                </button>
+            </div>
+        </div>
+
+        <div class="md:w-1/2 flex justify-center mt-5 md:mt-0">
+            <div class="relative w-96 h-128">
+                <div class="absolute w-full h-full -top-44">
+                    <div class="carousel">
+                        <div class="carousel-slides">
+                            <div class="carousel-slide relative">
+                                <img src="images/v1_without.png" class="absolute"/>
+                            </div>
+                            <div class="carousel-slide relative">
+                                <img src="images/v2_without.png" class="absolute"/>
+                            </div>
+                            <div class="carousel-side relative">
+                                <img src="images/v3_without.png" class="absolute"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <footer class="w-full text-center text-white py-2">
+        <p>Find us here:</p>
+        <div class="flex justify-center space-x-4 mt-2">
+            <a href="#" class="hover:text-gray-200">Facebook</a>
+            <a href="#" class="hover:text-gray-200">Instagram</a>
+            <a href="#" class="hover:text-gray-200">LinkedIn</a>
+            <a href="#" class="hover:text-gray-200">Twitter</a>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.carousel {
+    overflow: hidden;
+    margin: 0 auto;
+}
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.carousel-slide {
+    min-width: 100%;
+    height: 400px;
+}
